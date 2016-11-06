@@ -78,8 +78,8 @@ print 'MSE = ' + str( mse )
 
 # plot some signals
 p.figure(1).clear()
-p.plot( data[trainLen+1:trainLen+testLen+1], 'g' )
-p.plot( Y.T, 'b' )
+p.plot( data[trainLen+1:trainLen+testLen+1], 'g' , Y.T , 'b')
+#p.plot( Y.T, 'b' )
 p.title('Target and generated signals $y(n)$ starting at $n=0$')
 p.legend(['Target signal', 'Free-running predicted signal'])
 
